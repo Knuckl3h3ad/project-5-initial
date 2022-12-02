@@ -25,11 +25,11 @@ public class SortingUtility {
     public static <T extends Comparable<T>> void gnomeSort(T[] data) {
         int pos = 0;
         while (pos < data.length) {
-            if (pos == 0 || (Integer)data[pos] >= (Integer)data[pos - 1]) {
-                pos ++;
+            if (pos == 0 || (Integer) data[pos] >= (Integer) data[pos - 1]) {
+                pos++;
             } else {
-                swap (data,pos,pos-1);
-                pos --;
+                swap(data, pos, pos - 1);
+                pos--;
             }
         }
     }
@@ -75,8 +75,8 @@ public class SortingUtility {
      */
     private static <T extends Comparable<T>> void gnomierSort(T[] data, int upperBound) {
         int pos = upperBound;
-        while (pos > 0 && (Integer)data[pos-1] > (Integer)data[pos]) {
-            swap(data, pos-1, pos);
+        while (pos > 0 && (Integer) data[pos - 1] > (Integer) data[pos]) {
+            swap(data, pos - 1, pos);
             pos--;
         }
 
